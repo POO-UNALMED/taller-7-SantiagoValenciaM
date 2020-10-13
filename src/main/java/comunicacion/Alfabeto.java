@@ -36,7 +36,16 @@ public class Alfabeto extends Pictograma {
 	public String interpretacion() {
 		return this.interpretacion;
 	}
-	public String toString() {
-		return "A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z";
-	}
+	public String toString(){
+        String l = "";
+        for (int i = 0; i<letras.length ;i++){
+            if(i<letras.length-1){
+                l = l + letras[i]+", ";
+            }
+            else{
+                l = l + letras[i];
+            }
+        }
+        return l;
+    }
 }
